@@ -1,0 +1,51 @@
+.calculator {
+  width: 300px;
+  height: 500px; /* Mengatur tinggi menjadi lebih panjang */
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(135deg, #64B5F6, #BA68C8, #81C784); /* Ubah warna latar belakang menggunakan gradient */
+  border-radius: 15px; /* Lebih besar radius untuk sudut yang lebih halus */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Shadow yang lebih besar */
+  padding: 20px;
+  overflow-y: auto; /* Tambahkan scroll jika diperlukan */
+}
+
+#display {
+  width: calc(100% - 10px); /* Lebar dikurangi padding */
+  height: 50px;
+  font-size: 24px;
+  border: none;
+  background-color: #B39DDB; /* Warna latar belakang yang serasi */
+  border-radius: 8px; /* Sudut yang lebih halus */
+  padding: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow yang lebih halus */
+  color: #fff; /* Warna teks putih */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, calc(25% - 15px)); /* Menyesuaikan lebar tombol agar proporsional dengan kalkulator */
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: calc((500px - 140px) / 5); /* Menghitung tinggi tombol agar sesuai dengan kalkulator */
+  font-size: 18px;
+  border: none;
+  background: linear-gradient(135deg, #42A5F5, #9575CD, #4CAF50); /* Warna tombol menggunakan gradient */
+  color: #fff;
+  border-radius: 8px; /* Sudut yang lebih halus */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Shadow yang lebih halus */
+}
+
+button:hover {
+  filter: brightness(110%); /* Menambahkan sedikit kecerahan saat dihover */
+}
+
+button:active {
+  transform: translateY(1px);
+}
